@@ -1,0 +1,119 @@
+{
+  "id": "bf06915c-9883-4af3-8c6f-513cd62bcb58",
+  "version": "2.0",
+  "name": "Daeydam",
+  "url": "https://deydam.com",
+  "tests": [{
+    "id": "1d78d4dd-ed79-4091-bfda-a1b434508cca",
+    "name": "Daeydam",
+    "commands": [{
+      "id": "5df4624c-fcdf-4242-a8f4-a39fc6aca120",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa299b7e-1590-4b63-a4a1-940bec2dd617",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1199x707",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d79d7de-564d-4897-8d3c-eefcb56af760",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a20c625-42c7-4141-8ae9-c6f3af6024d5",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "hightea90"
+    }, {
+      "id": "a2f09fae-4e7d-4921-b2b5-31012c47db7d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "testing123"
+    }, {
+      "id": "374d5d67-00a3-4f88-85ab-3ce24ba9e638",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8b951da7-525e-4eb0-9578-c6e209a4d7ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.topbar__icon",
+      "targets": [
+        ["css=.topbar__icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ed56f85-4b44-467a-b8a8-5feb350441bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.topbar__link:nth-child(3) > .topbar__link-title",
+      "targets": [
+        ["css=.topbar__link:nth-child(3) > .topbar__link-title", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div/div/div/div[2]/div[3]/div/div/a[3]/p", "xpath:idRelative"],
+        ["xpath=//a[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "074e3c45-3f77-44d2-8038-ae1357947f5e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d2281009-bdec-4684-94f9-020c46f82459",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1d78d4dd-ed79-4091-bfda-a1b434508cca"]
+  }],
+  "urls": ["https://deydam.com/"],
+  "plugins": []
+}
